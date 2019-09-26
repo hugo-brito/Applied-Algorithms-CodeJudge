@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4aa0266a-38f8-4808-a1f8-bd571014b329" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Exercises.iml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sparseInnerProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +52,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.orthogonalVectors">
+  <component name="RunManager" selected="Application.sparseInnerProduct">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Applied Algorithms" />
@@ -69,6 +70,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="sparseInnerProduct" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sparseInnerProduct" />
+      <module name="Applied Algorithms" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="vectorProduct" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="vectorProduct" />
       <module name="Applied Algorithms" />
@@ -80,11 +88,13 @@
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.vectorProduct" />
       <item itemvalue="Application.orthogonalVectors" />
+      <item itemvalue="Application.sparseInnerProduct" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.orthogonalVectors" />
+        <item itemvalue="Application.sparseInnerProduct" />
         <item itemvalue="Application.vectorProduct" />
+        <item itemvalue="Application.orthogonalVectors" />
       </list>
     </recent_temporary>
   </component>
@@ -100,7 +110,8 @@
       <updated>1567145920671</updated>
       <workItem from="1567145923689" duration="5519000" />
       <workItem from="1569488283138" duration="33000" />
-      <workItem from="1569488694996" duration="52000" />
+      <workItem from="1569488694996" duration="325000" />
+      <workItem from="1569489059558" duration="2491000" />
     </task>
     <servers />
   </component>
@@ -112,7 +123,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -124,11 +137,6 @@
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/vectorProduct.java</url>
           <line>8</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/vectorProduct.java</url>
-          <line>10</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
