@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4aa0266a-38f8-4808-a1f8-bd571014b329" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/sparseOrthogonalVectors.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sparseOrthogonalVectors2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -52,17 +52,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.sparseOrthogonalVectors">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="Applied Algorithms" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.sparseOrthogonalVectors2">
     <configuration name="orthogonalVectors" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="orthogonalVectors" />
       <module name="Applied Algorithms" />
@@ -84,6 +74,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="sparseOrthogonalVectors2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sparseOrthogonalVectors2" />
+      <module name="Applied Algorithms" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="vectorProduct" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="vectorProduct" />
       <module name="Applied Algorithms" />
@@ -92,14 +89,15 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Main" />
       <item itemvalue="Application.vectorProduct" />
       <item itemvalue="Application.orthogonalVectors" />
       <item itemvalue="Application.sparseInnerProduct" />
       <item itemvalue="Application.sparseOrthogonalVectors" />
+      <item itemvalue="Application.sparseOrthogonalVectors2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.sparseOrthogonalVectors2" />
         <item itemvalue="Application.sparseOrthogonalVectors" />
         <item itemvalue="Application.sparseInnerProduct" />
         <item itemvalue="Application.vectorProduct" />
@@ -120,7 +118,7 @@
       <workItem from="1567145923689" duration="5519000" />
       <workItem from="1569488283138" duration="33000" />
       <workItem from="1569488694996" duration="325000" />
-      <workItem from="1569489059558" duration="7464000" />
+      <workItem from="1569489059558" duration="17099000" />
     </task>
     <servers />
   </component>
@@ -147,6 +145,11 @@
           <url>file://$PROJECT_DIR$/src/vectorProduct.java</url>
           <line>8</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/sparseOrthogonalVectors2.java</url>
+          <line>89</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
