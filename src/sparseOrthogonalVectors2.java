@@ -12,8 +12,13 @@ public class sparseOrthogonalVectors2 {
 	public static boolean areOrthogonal(int[] v, int[] w, int s) {
 		boolean hasChanged = false;
 		boolean orthogonal = true;
+
+		if (w[0] == 6) System.out.println("found 6!");
+
 		for (int i = 0; i < s; i++) {
+
 			for (int j = 0; j < s; j++) {
+
 				if (v[i] == w[j]) {
 					hasChanged = true;
 					orthogonal = false;
@@ -23,16 +28,16 @@ public class sparseOrthogonalVectors2 {
 			if (hasChanged) break;
 		}
 
-		if (orthogonal) {
-			System.out.println("\nthe vectors:");
-			System.out.print("[ ");
-			for (int i = 0; i < s - 1; i++) System.out.print(v[i] + ", ");
-			System.out.print(v[s - 1] + " ]\n");
-
-			System.out.print("and\n[ ");
-			for (int i = 0; i < s - 1; i++) System.out.print(w[i] + ", ");
-			System.out.print(v[s - 1] + " ]\nare orthogonal\n");
-		}
+//		if (orthogonal) {
+//			System.out.println("\nthe vectors:");
+//			System.out.print("[ ");
+//			for (int i = 0; i < s - 1; i++) System.out.print(v[i] + ", ");
+//			System.out.print(v[s - 1] + " ]\n");
+//
+//			System.out.print("and\n[ ");
+//			for (int i = 0; i < s - 1; i++) System.out.print(w[i] + ", ");
+//			System.out.print(v[s - 1] + " ]\nare orthogonal\n");
+//		}
 
 
 		return orthogonal;
@@ -90,12 +95,12 @@ public class sparseOrthogonalVectors2 {
 
 			if (areOrthogonal(i, w, s)) {
 				orthogonal = true;
-				System.out.println("Yes");
+				System.out.println("yes");
 				break;
 
 			}
 		}
 
-		if (!orthogonal) System.out.println("No");;
+		if (!orthogonal) System.out.println("no");
 	}
 }
