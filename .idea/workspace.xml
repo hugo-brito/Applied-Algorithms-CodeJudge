@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4aa0266a-38f8-4808-a1f8-bd571014b329" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/matrixMultiplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/naiveMatrixMultiplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/improvedNaiveMatrixMultiplication.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,7 +52,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.naiveMatrixMultiplication">
+  <component name="RunManager" selected="Application.improvedNaiveMatrixMultiplication">
+    <configuration name="improvedNaiveMatrixMultiplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="improvedNaiveMatrixMultiplication" />
+      <module name="Applied Algorithms" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="naiveMatrixMultiplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="naiveMatrixMultiplication" />
       <module name="Applied Algorithms" />
@@ -84,27 +88,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="vectorProduct" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="vectorProduct" />
-      <module name="Applied Algorithms" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Application.vectorProduct" />
       <item itemvalue="Application.sparseInnerProduct" />
       <item itemvalue="Application.sparseOrthogonalVectors" />
       <item itemvalue="Application.sparseOrthogonalVectors2" />
       <item itemvalue="Application.naiveMatrixMultiplication" />
+      <item itemvalue="Application.improvedNaiveMatrixMultiplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.improvedNaiveMatrixMultiplication" />
         <item itemvalue="Application.naiveMatrixMultiplication" />
         <item itemvalue="Application.sparseOrthogonalVectors2" />
         <item itemvalue="Application.sparseOrthogonalVectors" />
         <item itemvalue="Application.sparseInnerProduct" />
-        <item itemvalue="Application.vectorProduct" />
       </list>
     </recent_temporary>
   </component>
@@ -123,7 +120,7 @@
       <workItem from="1569488694996" duration="325000" />
       <workItem from="1569489059558" duration="17099000" />
       <workItem from="1569565286234" duration="5770000" />
-      <workItem from="1569689542035" duration="3786000" />
+      <workItem from="1569689542035" duration="4383000" />
     </task>
     <servers />
   </component>
@@ -177,7 +174,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/naiveMatrixMultiplication.java</url>
-          <line>92</line>
+          <line>91</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
