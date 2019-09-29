@@ -2,7 +2,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class recursiveMatrixMultiplication {
+public class strassensMatrixMultiplication {
 
 	/**
 	 * https://itu.codejudge.net/apalg19f/exercise/9663/view
@@ -26,9 +26,12 @@ public class recursiveMatrixMultiplication {
 		return c;
 	}
 
-	private static int[][] recursiveMultiply(int[][] a, int[][] b) {
+	private static int[][] strassenMultiply(int[][] a, int[][] b) throws Exception {
 
-		if (a.length > 2) {
+		int size = a.length;
+		if (b.length != size) throw new Exception("Bad recursive call. a.length != b.length");
+
+		if (size > 2) {
 			int[][] A1 = submatrix(a,1);
 			int[][] A2 = submatrix(a,2);
 			int[][] A3 = submatrix(a,3);
@@ -39,15 +42,36 @@ public class recursiveMatrixMultiplication {
 			int[][] B3 = submatrix(b,3);
 			int[][] B4 = submatrix(b,4);
 
+			// P1 = A1 * (B2 - B4)
+			int[][] P1 = strassenMultiply(A1, subtract(B2,B4));
+
+			// P2 = (A1 + A2) * B4
+			int[][] P2 = strassenMultiply(add(A1,A2),B4);
+
+			// P3 = (A3 + A4) * B1
+			int[][] P3 = strassenMultiply(add(A3,A4),B1);
+
+			// P4 = A4 * (B3 - B1)
+			int[][] P4 = strassenMultiply(A4,subtract(B3,B1));
+
+			// P5 = (A1 + A4) * (B1 + B4)
+			int[][] P5 = strassenMultiply(add(A1,A4),add(B1,B4));
+
+			// P6 = (A2 - A4) * (B3 + B4)
+			int[][] P6 = strassenMultiply(subtract(A2,A4),add(B3,B4));
+
+			// P7 = (A1 - A3) * (B1 + B2)
+			int[][] P7 = strassenMultiply(subtract(A1,A3),add(B1,B2));
+
 			return matrix(
-					// (A1 * B1) + (A2 * B3)
-					add(recursiveMultiply(A1,B1),recursiveMultiply(A2,B3)),
-					// (A1 * B2) + (A2 * B4)
-					add(recursiveMultiply(A1,B2),recursiveMultiply(A2,B4)),
-					// (A3 * B1) + (A4 * B3)
-					add(recursiveMultiply(A3,B1),recursiveMultiply(A4,B3)),
-					// (A3 * B2) + (A4 * B4)
-					add(recursiveMultiply(A3,B2),recursiveMultiply(A4,B4)));
+					// C1 = P5 + P4 - P2 + P6
+					add(subtract(add(P5,P4),P2),P6),
+					// C2 = P1 + P2
+					add(P1,P2),
+					// C3 = P3 + P4
+					add(P3,P4),
+					// C4 = P5 + P1 - P3 - P7
+					subtract(subtract(add(P5,P1),P3),P7));
 
 		} else { return naiveMultiply(a, b); }
 
@@ -59,6 +83,18 @@ public class recursiveMatrixMultiplication {
 		for (int i = 0; i < a.length; i++) {
 			for (int j = 0; j < a.length; j++) {
 				res[i][j] = a[i][j] + b[i][j];
+			}
+		}
+
+		return res;
+	}
+
+	private static int[][] subtract(int[][] a, int[][] b){
+		int[][] res = new int[a.length][a.length];
+
+		for (int i = 0; i < a.length; i++) {
+			for (int j = 0; j < a.length; j++) {
+				res[i][j] = a[i][j] - b[i][j];
 			}
 		}
 
@@ -96,42 +132,42 @@ public class recursiveMatrixMultiplication {
 		}
 
 		return res;
- 	}
+	}
 
- 	private static int[][] matrix (int[][] pos1, int[][] pos2, int[][] pos3, int[][] pos4) {
+	private static int[][] matrix (int[][] pos1, int[][] pos2, int[][] pos3, int[][] pos4) {
 		// given 4 submatrices, rebuilds the matrix
-	    int[][] res = new int[pos1.length*2][pos1.length*2];
+		int[][] res = new int[pos1.length*2][pos1.length*2];
 
-	    // position 1
-	    for (int i = 0; i < pos1.length; i++){
-	    	for (int j = 0 ; j < pos1.length; j++){
-	    		res[i][j] = pos1[i][j];
-		    }
-	    }
+		// position 1
+		for (int i = 0; i < pos1.length; i++){
+			for (int j = 0 ; j < pos1.length; j++){
+				res[i][j] = pos1[i][j];
+			}
+		}
 
-	    // position 2
-	    for (int i = 0; i < pos2.length; i++){
-		    for (int j = 0 ; j < pos2.length; j++){
-			    res[i][j+pos2.length] = pos2[i][j];
-		    }
-	    }
+		// position 2
+		for (int i = 0; i < pos2.length; i++){
+			for (int j = 0 ; j < pos2.length; j++){
+				res[i][j+pos2.length] = pos2[i][j];
+			}
+		}
 
-	    // position 3
-	    for (int i = 0; i < pos3.length; i++){
-		    for (int j = 0 ; j < pos3.length; j++){
-			    res[i+pos3.length][j] = pos3[i][j];
-		    }
-	    }
+		// position 3
+		for (int i = 0; i < pos3.length; i++){
+			for (int j = 0 ; j < pos3.length; j++){
+				res[i+pos3.length][j] = pos3[i][j];
+			}
+		}
 
-	    // position 4
-	    for (int i = 0; i < pos4.length; i++){
-		    for (int j = 0 ; j < pos4.length; j++){
-			    res[i+pos4.length][j+pos4.length] = pos4[i][j];
-		    }
-	    }
+		// position 4
+		for (int i = 0; i < pos4.length; i++){
+			for (int j = 0 ; j < pos4.length; j++){
+				res[i+pos4.length][j+pos4.length] = pos4[i][j];
+			}
+		}
 
-	    return res;
-    }
+		return res;
+	}
 
 	private static int[] getRow(int r, int[][] m) {
 		int[] res = new int[m.length];
@@ -203,16 +239,7 @@ public class recursiveMatrixMultiplication {
 				}
 			}
 
-
-//		System.out.println("\nMatrix B:");
-//		printMatrix(b);
-
-
-//			printMatrix(matrix(submatrix(a,1),submatrix(a,2),submatrix(a,3),submatrix(a,4)));
-//
-//			printMatrix(a);
-
-			int[][] c = recursiveMultiply(a, b);
+			int[][] c = strassenMultiply(a, b);
 
 //		System.out.println("\nMatrix C:");
 
@@ -221,8 +248,9 @@ public class recursiveMatrixMultiplication {
 		} catch (IOException e) {
 			// buffered reader exception
 			e.printStackTrace();
+		} catch (Exception e) {
+			// recursive call exception
+			e.printStackTrace();
 		}
-
 	}
-
 }

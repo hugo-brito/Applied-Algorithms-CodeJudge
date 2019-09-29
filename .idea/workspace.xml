@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4aa0266a-38f8-4808-a1f8-bd571014b329" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/squareMatrixGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/strassensMatrixMultiplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/recursiveMatrixMultiplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/recursiveMatrixMultiplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/squareMatrixGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/squareMatrixGenerator.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -123,7 +124,7 @@
       <workItem from="1569489059558" duration="17099000" />
       <workItem from="1569565286234" duration="5770000" />
       <workItem from="1569689542035" duration="12905000" />
-      <workItem from="1569746102853" duration="8098000" />
+      <workItem from="1569746102853" duration="12952000" />
     </task>
     <servers />
   </component>

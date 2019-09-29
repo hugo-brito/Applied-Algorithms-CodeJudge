@@ -3,7 +3,9 @@ import java.util.Scanner;
 
 public class squareMatrixGenerator {
 	/**
-	https://itu.codejudge.net/apalg19f/exercise/9663/view
+	 https://itu.codejudge.net/apalg19f/exercise/9663/view
+
+	 Produces 2 square matrices, A and B with size n. Optional seed can be used.
 	 */
 
 	private Random random;
@@ -18,6 +20,9 @@ public class squareMatrixGenerator {
 
 	public squareMatrixGenerator(int n, int rangeStart, int rangeEnd) {
 		this.n = n;
+		if (!isPowerOfTwo(n)) {
+			System.err.println(n + " is not a power of 2. Therefore, the generated matrices cannot be with a recursive multiplication method.");
+		}
 		if (n % 2 != 0 || n < 0) {
 			System.err.println("N must be even. Using " + Math.abs(n + 1) + " instead.");
 			this.n = Math.abs(n + 1);
@@ -45,6 +50,16 @@ public class squareMatrixGenerator {
 
 		generate();
 
+	}
+
+	/* Function to check if x is power of 2*/
+	private static boolean isPowerOfTwo(int n)
+	{
+		if(n==0)
+			return false;
+
+		return (int)(Math.ceil((Math.log(n) / Math.log(2)))) ==
+				(int)(Math.floor(((Math.log(n) / Math.log(2)))));
 	}
 
 	private void generate() {
