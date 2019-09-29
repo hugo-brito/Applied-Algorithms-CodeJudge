@@ -8,8 +8,6 @@ public class strassensMatrixMultiplication {
 	 * https://itu.codejudge.net/apalg19f/exercise/9663/view
 	 */
 
-	private static int n;
-
 	private static int[][] naiveMultiply(int[][] a, int[][] b) {
 
 		int[][] c = new int[2][2];
@@ -26,12 +24,9 @@ public class strassensMatrixMultiplication {
 		return c;
 	}
 
-	private static int[][] strassenMultiply(int[][] a, int[][] b) throws Exception {
+	private static int[][] strassenMultiply(int[][] a, int[][] b) {
 
-		int size = a.length;
-		if (b.length != size) throw new Exception("Bad recursive call. a.length != b.length");
-
-		if (size > 2) {
+		if (a.length > 2) {
 			int[][] A1 = submatrix(a,1);
 			int[][] A2 = submatrix(a,2);
 			int[][] A3 = submatrix(a,3);
@@ -210,7 +205,7 @@ public class strassensMatrixMultiplication {
 
 			BufferedReader scanner = new BufferedReader(new InputStreamReader(System.in));
 
-			n = Integer.parseInt(scanner.readLine());
+			int n = Integer.parseInt(scanner.readLine());
 
 			// get matrix A
 			int[][] a = new int[n][n];
@@ -247,9 +242,6 @@ public class strassensMatrixMultiplication {
 
 		} catch (IOException e) {
 			// buffered reader exception
-			e.printStackTrace();
-		} catch (Exception e) {
-			// recursive call exception
 			e.printStackTrace();
 		}
 	}

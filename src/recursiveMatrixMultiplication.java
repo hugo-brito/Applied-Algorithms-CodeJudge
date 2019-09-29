@@ -8,8 +8,6 @@ public class recursiveMatrixMultiplication {
 	 * https://itu.codejudge.net/apalg19f/exercise/9663/view
 	 */
 
-	private static int n;
-
 	private static int[][] naiveMultiply(int[][] a, int[][] b) {
 
 		int[][] c = new int[2][2];
@@ -40,13 +38,13 @@ public class recursiveMatrixMultiplication {
 			int[][] B4 = submatrix(b,4);
 
 			return matrix(
-					// (A1 * B1) + (A2 * B3)
+					// C1 = (A1 * B1) + (A2 * B3)
 					add(recursiveMultiply(A1,B1),recursiveMultiply(A2,B3)),
-					// (A1 * B2) + (A2 * B4)
+					// C2 = (A1 * B2) + (A2 * B4)
 					add(recursiveMultiply(A1,B2),recursiveMultiply(A2,B4)),
-					// (A3 * B1) + (A4 * B3)
+					// C3 = (A3 * B1) + (A4 * B3)
 					add(recursiveMultiply(A3,B1),recursiveMultiply(A4,B3)),
-					// (A3 * B2) + (A4 * B4)
+					// C4 = (A3 * B2) + (A4 * B4)
 					add(recursiveMultiply(A3,B2),recursiveMultiply(A4,B4)));
 
 		} else { return naiveMultiply(a, b); }
@@ -174,7 +172,7 @@ public class recursiveMatrixMultiplication {
 
 			BufferedReader scanner = new BufferedReader(new InputStreamReader(System.in));
 
-			n = Integer.parseInt(scanner.readLine());
+			int n = Integer.parseInt(scanner.readLine());
 
 			// get matrix A
 			int[][] a = new int[n][n];
