@@ -206,17 +206,17 @@ public class recursiveMatrixMultiplication {
 //				printMatrix(submatrix(a,i));
 //			}
 
-			int[][] d = new int[n/2][n/2];
 
-			printMatrix(matrix(submatrix(a,1),submatrix(a,2),submatrix(a,3),submatrix(a,4)));
 
-			printMatrix(a);
+//			printMatrix(matrix(submatrix(a,1),submatrix(a,2),submatrix(a,3),submatrix(a,4)));
+//
+//			printMatrix(a);
 
-//			int[][] c = recursiveMultiply(a, b);
+			int[][] c = recursiveMultiply(a, b);
 
 //		System.out.println("\nMatrix C:");
 
-//			printMatrix(c);
+			printMatrix(c);
 
 		} catch (IOException e) {
 			// buffered reader exception
