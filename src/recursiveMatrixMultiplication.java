@@ -74,14 +74,14 @@ public class recursiveMatrixMultiplication {
 			rowEnd = a.length/2;
 		} else {
 			rowStart = a.length/2;
-			rowEnd = a.length-1; }
+			rowEnd = a.length; }
 
 		if (pos % 2 != 0) {
 			colStart = 0;
 			colEnd = a.length/2;
 		} else {
 			colStart = a.length/2;
-			colEnd = a.length-1; }
+			colEnd = a.length; }
 
 		for (int i = rowStart; i < rowEnd; i++) {
 			for (int j = colStart; j < colEnd; j++) {
@@ -197,10 +197,17 @@ public class recursiveMatrixMultiplication {
 				}
 			}
 
-			printMatrix(submatrix(a,2));
+//			printMatrix(submatrix(a,2));
 
 //		System.out.println("\nMatrix B:");
 //		printMatrix(b);
+
+			for (int i = 1; i < 5; i++){
+				printMatrix(submatrix(a,i));
+			}
+
+//					matrix(submatrix(a,1),submatrix(a,2),submatrix(a,3),submatrix(a,4));
+//							.equals(a));
 
 //			int[][] c = recursiveMultiply(a, b);
 
