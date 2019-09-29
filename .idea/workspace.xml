@@ -122,7 +122,7 @@
       <workItem from="1569489059558" duration="17099000" />
       <workItem from="1569565286234" duration="5770000" />
       <workItem from="1569689542035" duration="12905000" />
-      <workItem from="1569746102853" duration="3007000" />
+      <workItem from="1569746102853" duration="4280000" />
     </task>
     <servers />
   </component>
@@ -181,8 +181,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/recursiveMatrixMultiplication.java</url>
-          <line>208</line>
+          <line>211</line>
           <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/recursiveMatrixMultiplication.java</url>
+          <line>96</line>
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

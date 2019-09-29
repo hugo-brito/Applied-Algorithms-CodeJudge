@@ -106,21 +106,21 @@ public class recursiveMatrixMultiplication {
 	    // position 2
 	    for (int i = 0; i < pos2.length; i++){
 		    for (int j = 0 ; j < pos2.length; j++){
-			    res[i][j+pos2.length+1] = pos2[i][j];
+			    res[i][j+pos2.length] = pos2[i][j];
 		    }
 	    }
 
 	    // position 3
 	    for (int i = 0; i < pos3.length; i++){
 		    for (int j = 0 ; j < pos3.length; j++){
-			    res[i+pos3.length+1][j] = pos3[i][j];
+			    res[i+pos3.length][j] = pos3[i][j];
 		    }
 	    }
 
 	    // position 4
 	    for (int i = 0; i < pos4.length; i++){
 		    for (int j = 0 ; j < pos4.length; j++){
-			    res[i+pos4.length+1][j+pos4.length+1] = pos4[i][j];
+			    res[i+pos4.length][j+pos4.length] = pos4[i][j];
 		    }
 	    }
 
@@ -202,12 +202,15 @@ public class recursiveMatrixMultiplication {
 //		System.out.println("\nMatrix B:");
 //		printMatrix(b);
 
-			for (int i = 1; i < 5; i++){
-				printMatrix(submatrix(a,i));
-			}
+//			for (int i = 1; i < 5; i++){
+//				printMatrix(submatrix(a,i));
+//			}
 
-//					matrix(submatrix(a,1),submatrix(a,2),submatrix(a,3),submatrix(a,4));
-//							.equals(a));
+			int[][] d = new int[n/2][n/2];
+
+			printMatrix(matrix(submatrix(a,1),submatrix(a,2),submatrix(a,3),submatrix(a,4)));
+
+			printMatrix(a);
 
 //			int[][] c = recursiveMultiply(a, b);
 
