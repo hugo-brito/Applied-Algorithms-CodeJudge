@@ -14,7 +14,7 @@ public class recursiveMatrixMultiplication {
 
 		//introducing local variable that forces n to 2
 		//the method now only works with matrices 2x2
-		int n = 2;
+		int n = a.length;
 
 		int[][] c = new int[n][n];
 
@@ -37,17 +37,14 @@ public class recursiveMatrixMultiplication {
 
 //		int[][] c = new int[size][size];
 
-		while (size > 2) {
+		if (size > 2) {
 			return matrix(
 					add(recursiveMultiply(submatrix(a,1),submatrix(b,1)),recursiveMultiply(submatrix(a,2),submatrix(b,3))),
 					add(recursiveMultiply(submatrix(a,1),submatrix(b,2)),recursiveMultiply(submatrix(a,2),submatrix(b,4))),
 					add(recursiveMultiply(submatrix(a,3),submatrix(b,1)),recursiveMultiply(submatrix(a,4),submatrix(b,3))),
 					add(recursiveMultiply(submatrix(a,3),submatrix(b,2)),recursiveMultiply(submatrix(a,4),submatrix(b,4))));
-		}
+		} else { return multiply(a, b); }
 
-		if (size == 2) { return multiply(a, b); }
-
-		return new int[size][size];
 	}
 
 	private static int[][] add(int[][] a, int[][] b){
@@ -63,7 +60,7 @@ public class recursiveMatrixMultiplication {
 	}
 
 
-	private static int[][] submatrix(int[][] a, int pos) {
+	public static int[][] submatrix(int[][] a, int pos) {
 		// given a matrix and a position, calculates the submatrix for that given position
 		int[][] res = new int[a.length/2][a.length/2];
 
@@ -77,18 +74,18 @@ public class recursiveMatrixMultiplication {
 			rowEnd = a.length/2;
 		} else {
 			rowStart = a.length/2;
-			rowEnd = a.length; }
+			rowEnd = a.length-1; }
 
 		if (pos % 2 != 0) {
 			colStart = 0;
 			colEnd = a.length/2;
 		} else {
-			colStart = a.length/2 + 1;
-			colEnd = a.length; }
+			colStart = a.length/2;
+			colEnd = a.length-1; }
 
 		for (int i = rowStart; i < rowEnd; i++) {
 			for (int j = colStart; j < colEnd; j++) {
-				res[i][j] = a[i][j];
+				res[i-rowStart][j-colStart] = a[i][j];
 			}
 		}
 
@@ -155,11 +152,11 @@ public class recursiveMatrixMultiplication {
 	}
 
 	private static void printMatrix(int[][] c) {
-		for (int i = 0; i < n; i++){
-			for (int j = 0; j < n-1; j++) {
+		for (int i = 0; i < c.length; i++){
+			for (int j = 0; j < c.length-1; j++) {
 				System.out.print(c[i][j] + " ");
 			}
-			System.out.print(c[i][n-1] + "\n");
+			System.out.print(c[i][c.length-1] + "\n");
 			// c[row][column]
 		}
 
@@ -200,14 +197,16 @@ public class recursiveMatrixMultiplication {
 				}
 			}
 
+			printMatrix(submatrix(a,2));
+
 //		System.out.println("\nMatrix B:");
 //		printMatrix(b);
 
-			int[][] c = recursiveMultiply(a, b);
+//			int[][] c = recursiveMultiply(a, b);
 
 //		System.out.println("\nMatrix C:");
 
-			printMatrix(c);
+//			printMatrix(c);
 
 		} catch (IOException e) {
 			// buffered reader exception
