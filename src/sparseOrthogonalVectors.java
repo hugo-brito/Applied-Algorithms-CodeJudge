@@ -39,22 +39,20 @@ public class sparseOrthogonalVectors {
 		// skip the next line
 		scanner.nextLine();
 
-		Map<String, Set<Integer>> w = new HashMap<>();
-
 		boolean brk = false;
 
 		for (int i = 0; i < k; i++) {
 			String[] line = scanner.nextLine().split(" ");
-			Set<Integer> wIndices = new TreeSet<>();
+			Set<Integer> w = new TreeSet<>();
 			for (int j = 0; j < s; j++) {
-				wIndices.add(Integer.parseInt(line[j]));
+				w.add(Integer.parseInt(line[j]));
 			}
+
 			for (int[] vIndices : v) {
 				boolean allDiff = true; // works but exceeds time limit
-				for (int l : vIndices) {
-					if (wIndices.contains(l)) {
-						allDiff = false;
-					}
+				for (int l : vIndices)
+				if (w.contains(l)) {
+					allDiff = false;
 				}
 				if (allDiff) {
 					System.out.println("yes");

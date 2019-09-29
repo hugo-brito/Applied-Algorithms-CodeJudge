@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4aa0266a-38f8-4808-a1f8-bd571014b329" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/sparseOrthogonalVectors2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/recursiveMatrixMultiplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/recursiveMatrixMultiplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/strassensMatrixMultiplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/strassensMatrixMultiplication.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,8 +16,7 @@
     <option name="done" value="true" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -33,12 +33,14 @@
   </component>
   <component name="ProjectId" id="1RMsPrUBxCMl14CpVJDT5Lho7c9" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../1.2 Algorithms and Data Structures/runsort" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -52,56 +54,56 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.sparseOrthogonalVectors2">
-    <configuration name="orthogonalVectors" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="orthogonalVectors" />
+  <component name="RunManager" selected="Application.strassensMatrixMultiplication">
+    <configuration name="improvedNaiveMatrixMultiplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="improvedNaiveMatrixMultiplication" />
       <module name="Applied Algorithms" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="sparseInnerProduct" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sparseInnerProduct" />
+    <configuration name="naiveMatrixMultiplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="naiveMatrixMultiplication" />
       <module name="Applied Algorithms" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="sparseOrthogonalVectors" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sparseOrthogonalVectors" />
+    <configuration name="recursiveMatrixMultiplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="recursiveMatrixMultiplication" />
       <module name="Applied Algorithms" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="sparseOrthogonalVectors2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sparseOrthogonalVectors2" />
+    <configuration name="squareMatrixGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="squareMatrixGenerator" />
       <module name="Applied Algorithms" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="vectorProduct" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="vectorProduct" />
+    <configuration name="strassensMatrixMultiplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="strassensMatrixMultiplication" />
       <module name="Applied Algorithms" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.vectorProduct" />
-      <item itemvalue="Application.orthogonalVectors" />
-      <item itemvalue="Application.sparseInnerProduct" />
-      <item itemvalue="Application.sparseOrthogonalVectors" />
-      <item itemvalue="Application.sparseOrthogonalVectors2" />
+      <item itemvalue="Application.naiveMatrixMultiplication" />
+      <item itemvalue="Application.improvedNaiveMatrixMultiplication" />
+      <item itemvalue="Application.recursiveMatrixMultiplication" />
+      <item itemvalue="Application.squareMatrixGenerator" />
+      <item itemvalue="Application.strassensMatrixMultiplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.sparseOrthogonalVectors2" />
-        <item itemvalue="Application.sparseOrthogonalVectors" />
-        <item itemvalue="Application.sparseInnerProduct" />
-        <item itemvalue="Application.vectorProduct" />
-        <item itemvalue="Application.orthogonalVectors" />
+        <item itemvalue="Application.strassensMatrixMultiplication" />
+        <item itemvalue="Application.recursiveMatrixMultiplication" />
+        <item itemvalue="Application.squareMatrixGenerator" />
+        <item itemvalue="Application.improvedNaiveMatrixMultiplication" />
+        <item itemvalue="Application.naiveMatrixMultiplication" />
       </list>
     </recent_temporary>
   </component>
@@ -119,6 +121,9 @@
       <workItem from="1569488283138" duration="33000" />
       <workItem from="1569488694996" duration="325000" />
       <workItem from="1569489059558" duration="17099000" />
+      <workItem from="1569565286234" duration="5770000" />
+      <workItem from="1569689542035" duration="12905000" />
+      <workItem from="1569746102853" duration="13559000" />
     </task>
     <servers />
   </component>
@@ -137,6 +142,20 @@
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -148,8 +167,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/sparseOrthogonalVectors2.java</url>
-          <line>89</line>
+          <line>94</line>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/sparseOrthogonalVectors2.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/naiveMatrixMultiplication.java</url>
+          <line>91</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
