@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4aa0266a-38f8-4808-a1f8-bd571014b329" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/expMatrixMultiplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/naiveMatrixMultiplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/naiveMatrixMultiplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/recursiveMatrixMultiplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/recursiveMatrixMultiplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/squareMatrixGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/squareMatrixGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/strassensMatrixMultiplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/strassensMatrixMultiplication.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -54,16 +57,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.strassensMatrixMultiplication">
-    <configuration name="improvedNaiveMatrixMultiplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="improvedNaiveMatrixMultiplication" />
+  <component name="RunManager" selected="Application.expMatrixMultiplication">
+    <configuration name="expMatrixMultiplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="expMatrixMultiplication" />
       <module name="Applied Algorithms" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="naiveMatrixMultiplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="naiveMatrixMultiplication" />
+    <configuration name="improvedNaiveMatrixMultiplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="improvedNaiveMatrixMultiplication" />
       <module name="Applied Algorithms" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -91,19 +94,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.naiveMatrixMultiplication" />
       <item itemvalue="Application.improvedNaiveMatrixMultiplication" />
       <item itemvalue="Application.recursiveMatrixMultiplication" />
       <item itemvalue="Application.squareMatrixGenerator" />
       <item itemvalue="Application.strassensMatrixMultiplication" />
+      <item itemvalue="Application.expMatrixMultiplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.expMatrixMultiplication" />
         <item itemvalue="Application.strassensMatrixMultiplication" />
         <item itemvalue="Application.recursiveMatrixMultiplication" />
         <item itemvalue="Application.squareMatrixGenerator" />
         <item itemvalue="Application.improvedNaiveMatrixMultiplication" />
-        <item itemvalue="Application.naiveMatrixMultiplication" />
       </list>
     </recent_temporary>
   </component>
@@ -124,6 +127,7 @@
       <workItem from="1569565286234" duration="5770000" />
       <workItem from="1569689542035" duration="12905000" />
       <workItem from="1569746102853" duration="13559000" />
+      <workItem from="1569867635528" duration="3901000" />
     </task>
     <servers />
   </component>
@@ -177,7 +181,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/naiveMatrixMultiplication.java</url>
-          <line>91</line>
+          <line>96</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>

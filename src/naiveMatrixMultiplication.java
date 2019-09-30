@@ -58,6 +58,11 @@ public class naiveMatrixMultiplication {
 
 	}
 
+	public static int[][] naiveMultiplication(int[][] a, int[][] b) {
+		naiveMatrixMultiplication.n = a.length;
+		return multiply(a,b);
+	}
+
 	public static void main(String[] args) {
 
 		Scanner scanner = new Scanner(System.in);

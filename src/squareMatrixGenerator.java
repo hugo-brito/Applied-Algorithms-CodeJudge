@@ -14,9 +14,16 @@ public class squareMatrixGenerator {
 	private int rangeStart;
 	private int rangeEnd;
 
-	private static int[][] A;
+	private int[][] A;
 
-	private static int[][] B;
+	private int[][] B;
+
+	/*
+	 * getter methods
+	 */
+	public int[][] getA() {return A;}
+	public int[][] getB() {return B;}
+	public int getN() {return n;}
 
 	public squareMatrixGenerator(int n, int rangeStart, int rangeEnd) {
 		this.n = n;
@@ -44,7 +51,7 @@ public class squareMatrixGenerator {
 
 	}
 
-	public squareMatrixGenerator(int n, int rangeStart, int rangeEnd, int seed) {
+	public squareMatrixGenerator(int n, int rangeStart, int rangeEnd, long seed) {
 		this(n, rangeStart, rangeEnd);
 		this.random.setSeed(seed);
 

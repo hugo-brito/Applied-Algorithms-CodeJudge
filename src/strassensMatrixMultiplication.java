@@ -199,6 +199,8 @@ public class strassensMatrixMultiplication {
 
 	}
 
+	public static int[][] strassensMultiplication(int[][] a, int[][] b) { return strassenMultiply(a,b); }
+
 	public static void main(String[] args) {
 
 		try {

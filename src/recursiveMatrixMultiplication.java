@@ -166,6 +166,8 @@ public class recursiveMatrixMultiplication {
 
 	}
 
+	public static int[][] recursiveMultiplication(int[][] a, int[][] b) { return recursiveMultiply(a,b); }
+
 	public static void main(String[] args) {
 
 		try {
