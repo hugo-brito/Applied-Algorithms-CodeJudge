@@ -44,7 +44,7 @@ public class expMatrixMultiplication {
 			int[][] naive = naiveMatrixMultiplication.naiveMultiplication(A,B);
 			long naiveEnd = System.nanoTime();
 
-			System.out.println("Naive," + (naiveEnd - naiveStart) + "," + n + ",true," + seed + "," + rangeStart + "," + rangeEnd);
+			if (addHeader) {System.out.println("Naive," + (naiveEnd - naiveStart) + "," + n + ",true," + seed + "," + rangeStart + "," + rangeEnd);}
 
 			long recursiveStart = System.nanoTime();
 			int[][] recursive = naiveMatrixMultiplication.naiveMultiplication(A,B);
