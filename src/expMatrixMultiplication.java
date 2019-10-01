@@ -37,14 +37,14 @@ public class expMatrixMultiplication {
 		int[][] A = matrixGenerator.getA();
 		int[][] B = matrixGenerator.getB();
 
-		System.out.println("Algorithm,Running Time (ns),Matrix size (n),Valid?,Seed,Range Start (a),Range End (b)");
+		if (addHeader) { System.out.println("Algorithm,Running Time (ns),Matrix size (n),Valid?,Seed,Range Start (a),Range End (b)"); }
 
 		for (int i = 0; i < REPS; i++){
 			long naiveStart = System.nanoTime();
 			int[][] naive = naiveMatrixMultiplication.naiveMultiplication(A,B);
 			long naiveEnd = System.nanoTime();
 
-			if (addHeader) {System.out.println("Naive," + (naiveEnd - naiveStart) + "," + n + ",true," + seed + "," + rangeStart + "," + rangeEnd);}
+			System.out.println("Naive," + (naiveEnd - naiveStart) + "," + n + ",true," + seed + "," + rangeStart + "," + rangeEnd);
 
 			long recursiveStart = System.nanoTime();
 			int[][] recursive = naiveMatrixMultiplication.naiveMultiplication(A,B);
