@@ -75,14 +75,19 @@ All the matrix multiplication algorithms pass all tests on Code Judge. Also, to 
 \end{itemize}
 \end{tcolorbox}
 
-\bigskip\noindent
+% \bigskip
+\noindent
 We have ran the described experiment and obtained the running times. These were outputted to a file -- {\tt res01.csv} -- that can be found in the {\tt out} folder. These were plotted and we obtained the following:
 
-\begin{figure}[!h]
-  \includegraphics[width=\linewidth]{out/matrixMultiplication/matrixmult.png}
-  \caption{$log_2$ $log_2$ plot of running time (nanoseconds) vs. matrix size of the $3$ algorithms}
+\begin{figure}[h!tb]
+\centering
+%[width=\linewidth]
+  \includegraphics[scale=0.67]{out/matrixMultiplication/matrixmult.png}
+  \caption{$log_2$ $log_2$ plot of the average running times (nanoseconds) vs. matrix size of the $3$ algorithms}
   \label{fig:Plot}
 \end{figure}
 
+\section{Conclusion}
+Unfortunately, we could not find any significant difference in the running times between all the $3$ algorithms. We were expecting the running time of the Strassen's algorithm to be slightly better than the naive and the recursive one. Perhaps with bigger matrices the difference would be noticeable, but for now we have no way of being sure.
 
 \end{document}
