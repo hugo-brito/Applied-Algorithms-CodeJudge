@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4aa0266a-38f8-4808-a1f8-bd571014b329" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/kruskalMST.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kruskalMST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kruskalMST.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +53,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.expMatrixMultiplication">
+  <component name="RunManager" selected="Application.kruskalMST">
     <configuration name="expMatrixMultiplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="expMatrixMultiplication" />
       <module name="Applied Algorithms" />
@@ -61,8 +61,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="improvedNaiveMatrixMultiplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="improvedNaiveMatrixMultiplication" />
+    <configuration name="kruskalMST" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="kruskalMST" />
       <module name="Applied Algorithms" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -90,19 +90,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.improvedNaiveMatrixMultiplication" />
       <item itemvalue="Application.recursiveMatrixMultiplication" />
       <item itemvalue="Application.squareMatrixGenerator" />
       <item itemvalue="Application.strassensMatrixMultiplication" />
       <item itemvalue="Application.expMatrixMultiplication" />
+      <item itemvalue="Application.kruskalMST" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.kruskalMST" />
         <item itemvalue="Application.expMatrixMultiplication" />
         <item itemvalue="Application.strassensMatrixMultiplication" />
         <item itemvalue="Application.recursiveMatrixMultiplication" />
         <item itemvalue="Application.squareMatrixGenerator" />
-        <item itemvalue="Application.improvedNaiveMatrixMultiplication" />
       </list>
     </recent_temporary>
   </component>
