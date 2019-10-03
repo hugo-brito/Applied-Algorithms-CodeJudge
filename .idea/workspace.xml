@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4aa0266a-38f8-4808-a1f8-bd571014b329" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/fastSparseInnerProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fastSparseOrthogonalVectors.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/orthogonalVectors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/orthogonalVectors.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sparseInnerProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sparseInnerProduct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vectorProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/vectorProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sparseOrthogonalVectors2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sparseOrthogonalVectors3.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,16 +56,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.sparseInnerProduct">
-    <configuration name="improvedKruskalMST" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="improvedKruskalMST" />
+  <component name="RunManager" selected="Application.fastSparseOrthogonalVectors">
+    <configuration name="fastSparseInnerProduct" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="fastSparseInnerProduct" />
       <module name="Applied Algorithms" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="kruskalMST" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="kruskalMST" />
+    <configuration name="fastSparseOrthogonalVectors" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="fastSparseOrthogonalVectors" />
       <module name="Applied Algorithms" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -92,19 +93,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.kruskalMST" />
-      <item itemvalue="Application.improvedKruskalMST" />
       <item itemvalue="Application.primMST" />
       <item itemvalue="Application.vectorProduct" />
       <item itemvalue="Application.sparseInnerProduct" />
+      <item itemvalue="Application.fastSparseInnerProduct" />
+      <item itemvalue="Application.fastSparseOrthogonalVectors" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.fastSparseOrthogonalVectors" />
+        <item itemvalue="Application.fastSparseInnerProduct" />
         <item itemvalue="Application.sparseInnerProduct" />
         <item itemvalue="Application.vectorProduct" />
         <item itemvalue="Application.primMST" />
-        <item itemvalue="Application.improvedKruskalMST" />
-        <item itemvalue="Application.kruskalMST" />
       </list>
     </recent_temporary>
   </component>
@@ -129,7 +130,8 @@
       <workItem from="1569947430393" duration="2363000" />
       <workItem from="1570036720022" duration="3077000" />
       <workItem from="1570090058291" duration="10440000" />
-      <workItem from="1570123246015" duration="2201000" />
+      <workItem from="1570123246015" duration="2672000" />
+      <workItem from="1570125934822" duration="4965000" />
     </task>
     <servers />
   </component>
@@ -167,16 +169,6 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/sparseOrthogonalVectors2.java</url>
-          <line>94</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/sparseOrthogonalVectors2.java</url>
-          <line>68</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/naiveMatrixMultiplication.java</url>
           <line>96</line>
           <option name="timeStamp" value="10" />
@@ -185,6 +177,11 @@
           <url>file://$PROJECT_DIR$/src/primMST.java</url>
           <line>64</line>
           <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/fastSparseInnerProduct.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
