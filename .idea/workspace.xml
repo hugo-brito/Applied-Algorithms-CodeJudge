@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4aa0266a-38f8-4808-a1f8-bd571014b329" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/improvedKruskalMST.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/primMST.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kruskalMST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kruskalMST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/orthogonalVectors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/orthogonalVectors.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sparseInnerProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sparseInnerProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vectorProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/vectorProduct.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,14 +55,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.primMST">
-    <configuration name="expMatrixMultiplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="expMatrixMultiplication" />
-      <module name="Applied Algorithms" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.sparseInnerProduct">
     <configuration name="improvedKruskalMST" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="improvedKruskalMST" />
       <module name="Applied Algorithms" />
@@ -84,27 +77,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="strassensMatrixMultiplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="strassensMatrixMultiplication" />
+    <configuration name="sparseInnerProduct" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sparseInnerProduct" />
+      <module name="Applied Algorithms" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="vectorProduct" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="vectorProduct" />
       <module name="Applied Algorithms" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.strassensMatrixMultiplication" />
-      <item itemvalue="Application.expMatrixMultiplication" />
       <item itemvalue="Application.kruskalMST" />
       <item itemvalue="Application.improvedKruskalMST" />
       <item itemvalue="Application.primMST" />
+      <item itemvalue="Application.vectorProduct" />
+      <item itemvalue="Application.sparseInnerProduct" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.sparseInnerProduct" />
+        <item itemvalue="Application.vectorProduct" />
         <item itemvalue="Application.primMST" />
         <item itemvalue="Application.improvedKruskalMST" />
         <item itemvalue="Application.kruskalMST" />
-        <item itemvalue="Application.expMatrixMultiplication" />
-        <item itemvalue="Application.strassensMatrixMultiplication" />
       </list>
     </recent_temporary>
   </component>
@@ -128,7 +128,8 @@
       <workItem from="1569867635528" duration="3901000" />
       <workItem from="1569947430393" duration="2363000" />
       <workItem from="1570036720022" duration="3077000" />
-      <workItem from="1570090058291" duration="10181000" />
+      <workItem from="1570090058291" duration="10440000" />
+      <workItem from="1570123246015" duration="2201000" />
     </task>
     <servers />
   </component>
@@ -165,11 +166,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/vectorProduct.java</url>
-          <line>8</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/sparseOrthogonalVectors2.java</url>
           <line>94</line>
