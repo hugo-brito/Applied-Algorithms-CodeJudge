@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4aa0266a-38f8-4808-a1f8-bd571014b329" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/improvedKruskalMST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/primMST.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/kruskalMST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kruskalMST.java" afterDir="false" />
     </list>
@@ -53,9 +55,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.kruskalMST">
+  <component name="RunManager" selected="Application.primMST">
     <configuration name="expMatrixMultiplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="expMatrixMultiplication" />
+      <module name="Applied Algorithms" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="improvedKruskalMST" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="improvedKruskalMST" />
       <module name="Applied Algorithms" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -68,15 +77,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="recursiveMatrixMultiplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="recursiveMatrixMultiplication" />
-      <module name="Applied Algorithms" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="squareMatrixGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="squareMatrixGenerator" />
+    <configuration name="primMST" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="primMST" />
       <module name="Applied Algorithms" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -90,19 +92,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.recursiveMatrixMultiplication" />
-      <item itemvalue="Application.squareMatrixGenerator" />
       <item itemvalue="Application.strassensMatrixMultiplication" />
       <item itemvalue="Application.expMatrixMultiplication" />
       <item itemvalue="Application.kruskalMST" />
+      <item itemvalue="Application.improvedKruskalMST" />
+      <item itemvalue="Application.primMST" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.primMST" />
+        <item itemvalue="Application.improvedKruskalMST" />
         <item itemvalue="Application.kruskalMST" />
         <item itemvalue="Application.expMatrixMultiplication" />
         <item itemvalue="Application.strassensMatrixMultiplication" />
-        <item itemvalue="Application.recursiveMatrixMultiplication" />
-        <item itemvalue="Application.squareMatrixGenerator" />
       </list>
     </recent_temporary>
   </component>
@@ -126,6 +128,7 @@
       <workItem from="1569867635528" duration="3901000" />
       <workItem from="1569947430393" duration="2363000" />
       <workItem from="1570036720022" duration="3077000" />
+      <workItem from="1570090058291" duration="10181000" />
     </task>
     <servers />
   </component>
@@ -181,6 +184,11 @@
           <url>file://$PROJECT_DIR$/src/naiveMatrixMultiplication.java</url>
           <line>96</line>
           <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/primMST.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

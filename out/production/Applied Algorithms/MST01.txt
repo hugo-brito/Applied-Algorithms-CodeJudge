@@ -1,0 +1,50 @@
+ 1:   v =31   w =38   Weight =  1623
+ 2:   v =31   w =44   Weight =  1936
+ 3:   v =16   w =37   Weight =  3808
+ 4:   v =24   w =36   Weight =  4014
+ 5:   v =37   w =39   Weight =  4534
+ 6:   v =21   w =33   Weight =  5984
+ 7:   v = 2   w =14   Weight =  6228
+ 8:   v =25   w =37   Weight =  8055
+ 9:   v =19   w =22   Weight =  8091
+10:   v = 5   w =19   Weight =  9446
+11:   v = 1   w =31   Weight =  9607
+12:   v =17   w =31   Weight =  9862
+13:   v =32   w =48   Weight = 10723
+14:   v =22   w =35   Weight = 10728
+15:   v =12   w =28   Weight = 10920
+16:   v =43   w =47   Weight = 11041
+17:   v =37   w =44   Weight = 11168
+18:   v =26   w =49   Weight = 11492
+19:   v =12   w =20   Weight = 11819
+20:   v =25   w =29   Weight = 12124
+21:   v =15   w =41   Weight = 12417
+22:   v = 7   w =18   Weight = 13422
+23:   v =14   w =31   Weight = 13717
+24:   v =31   w =46   Weight = 14501
+25:   v =14   w =21   Weight = 15220
+26:   v = 7   w =26   Weight = 15445
+27:   v =27   w =34   Weight = 18765
+28:   v =39   w =45   Weight = 19823
+29:   v =42   w =48   Weight = 20035
+30:   v =18   w =23   Weight = 20472
+31:   v =39   w =43   Weight = 21618
+32:   v = 7   w =20   Weight = 22209
+33:   v =30   w =46   Weight = 25578
+34:   v =27   w =46   Weight = 26469
+35:   v =12   w =34   Weight = 26796
+36:   v = 1   w =19   Weight = 27554
+37:   v =23   w =24   Weight = 28044
+38:   v = 3   w =44   Weight = 29955
+39:   v = 8   w =15   Weight = 30536
+40:   v = 0   w = 5   Weight = 30986
+41:   v =12   w =32   Weight = 32573
+42:   v =15   w =24   Weight = 33863
+43:   v = 8   w =11   Weight = 34725
+44:   v = 6   w =13   Weight = 35504
+45:   v = 4   w =31   Weight = 38945
+46:   v = 9   w =33   Weight = 40101
+47:   v =10   w =27   Weight = 47478
+48:   v = 2   w =40   Weight = 54472
+49:   v = 6   w =38   Weight = 55740
+Weight of the MST = 970166

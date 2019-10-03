@@ -1,29 +1,21 @@
-import java.io.BufferedReader;
+import com.sun.source.tree.Tree;
+
+import java.io.DataInputStream;
+import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.*;
 
-public class kruskalMST {
+public class improvedKruskalMST {
 
 	/**
 	 * https://itu.codejudge.net/apalg19f/exercise/9686/view
-	 */
-
-	/* Need:
-	- Edge class
-	- MST Class:
-		1. Sort Edges -- use built-in PQ for that
-		2. Remove edges from PQ.
-		3. Check if the vertices of such edge are connected
-		4. Add to the mst if not
-		5. Stop when mst.size() = number of vertices - 1
 	 */
 
 	private Set<Edge> mst;
 
 	private long weight;
 
-	public kruskalMST(int n, List<Edge> edges){
+	public improvedKruskalMST(int n, List<Edge> edges){
 
 		this.mst = new HashSet<>(n-1);
 		this.weight = 0;
@@ -34,8 +26,6 @@ public class kruskalMST {
 		// add all edges to the PQ
 //		PriorityQueue<Edge> edgePQ = new PriorityQueue<>(edges);
 
-
-
 		// new Union-Find data structure with all vertices on their own set
 		UF connectedComponents = new UF(n);
 
@@ -43,46 +33,53 @@ public class kruskalMST {
 			Edge e = edges.remove(edges.size()-1);
 			int v = e.either(), w = e.other(v);
 			if(!connectedComponents.connected(v,w)){
+
 				connectedComponents.union(v,w);
+
 				mst.add(e);
-//				System.out.println("Previous weight = " + this.weight);
-//				System.out.println("Weight of the edge to be added = " + e.weight);
+
 				this.weight += e.weight;
-//				System.out.println("Total weight up to this point = " + this.weight);
+
 			}
-//			System.out.println(connectedVertices.count());
+
 		}
 
 	}
 
+	public void printMST() {
+
+		TreeSet<Edge> edgesInMST = new TreeSet<>();
+		edgesInMST.addAll(this.mst);
+
+		int i = 0;
+		for (Edge e : edgesInMST) {
+			i++;
+			System.out.printf("%2d%1s%6s%2d%6s%2d%11s%6d%n", i,":","v =", e.either(),"w =", e.other(e.either()),"Weight =", e.weight);
+		}
+		System.out.println("Weight of the MST = " + getWeight());
+	}
+
 	public long getWeight() {return weight;}
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 
 		try {
+			Reader s = new Reader();
 
-			BufferedReader scanner = new BufferedReader(new InputStreamReader(System.in));
-
-			String[] nm = scanner.readLine().split(" ");
-
-			int n = Integer.parseInt(nm[0]);
 			// vertices
+			int n = s.nextInt();
 
-			int m = Integer.parseInt(nm[1]);
 			// edges
-
-//			EdgeWeightedGraph graph = new EdgeWeightedGraph(n);
+			int m = s.nextInt();
 
 			List<Edge> edges = new ArrayList<>(m);
 
-			for (int i = 0; i < m; i++){
-				String[] line = scanner.readLine().split(" ");
+			for (int i = 0; i < m; i++) {
+				int v = s.nextInt();
 
-				int v = Integer.parseInt(line[0]);
+				int w = s.nextInt();
 
-				int w = Integer.parseInt(line[1]);
-
-				long weight = Integer.parseInt(line[2]);
+				long weight = s.nextLong();
 
 				Edge e = new Edge(v, w, weight);
 
@@ -91,23 +88,136 @@ public class kruskalMST {
 //				graph.addEdge(e);
 			}
 
-			kruskalMST mst = new kruskalMST(n, edges);
+			improvedKruskalMST mst = new improvedKruskalMST(n, edges);
 
 			System.out.println(mst.getWeight());
 
+			mst.printMST();
 
 		} catch (IOException e) {
-			// buffered reader exception
+			// reader
 			e.printStackTrace();
 		}
 	}
 
+	// significantly improved the running times!
+	// for fast input reading
+	static class Reader{
+		final private int BUFFER_SIZE = 1 << 16;
+		private DataInputStream din;
+		private byte[] buffer;
+		private int bufferPointer, bytesRead;
+
+		public Reader()
+		{
+			din = new DataInputStream(System.in);
+			buffer = new byte[BUFFER_SIZE];
+			bufferPointer = bytesRead = 0;
+		}
+
+		public Reader(String file_name) throws IOException {
+			din = new DataInputStream(new FileInputStream(file_name));
+			buffer = new byte[BUFFER_SIZE];
+			bufferPointer = bytesRead = 0;
+		}
+
+		public String readLine() throws IOException	{
+			byte[] buf = new byte[64]; // line length
+			int cnt = 0, c;
+			while ((c = read()) != -1)
+			{
+				if (c == '\n')
+					break;
+				buf[cnt++] = (byte) c;
+			}
+			return new String(buf, 0, cnt);
+		}
+
+		public int nextInt() throws IOException	{
+			int ret = 0;
+			byte c = read();
+			while (c <= ' ')
+				c = read();
+			boolean neg = (c == '-');
+			if (neg)
+				c = read();
+			do
+			{
+				ret = ret * 10 + c - '0';
+			}  while ((c = read()) >= '0' && c <= '9');
+
+			if (neg)
+				return -ret;
+			return ret;
+		}
+
+		public long nextLong() throws IOException {
+			long ret = 0;
+			byte c = read();
+			while (c <= ' ')
+				c = read();
+			boolean neg = (c == '-');
+			if (neg)
+				c = read();
+			do {
+				ret = ret * 10 + c - '0';
+			}
+			while ((c = read()) >= '0' && c <= '9');
+			if (neg)
+				return -ret;
+			return ret;
+		}
+
+		public double nextDouble() throws IOException {
+			double ret = 0, div = 1;
+			byte c = read();
+			while (c <= ' ')
+				c = read();
+			boolean neg = (c == '-');
+			if (neg)
+				c = read();
+
+			do {
+				ret = ret * 10 + c - '0';
+			}
+			while ((c = read()) >= '0' && c <= '9');
+
+			if (c == '.')
+			{
+				while ((c = read()) >= '0' && c <= '9')
+				{
+					ret += (c - '0') / (div *= 10);
+				}
+			}
+
+			if (neg)
+				return -ret;
+			return ret;
+		}
+
+		private void fillBuffer() throws IOException {
+			bytesRead = din.read(buffer, bufferPointer = 0, BUFFER_SIZE);
+			if (bytesRead == -1)
+				buffer[0] = -1;
+		}
+
+		private byte read() throws IOException {
+			if (bufferPointer == bytesRead)
+				fillBuffer();
+			return buffer[bufferPointer++];
+		}
+
+		public void close() throws IOException {
+			if (din == null)
+				return;
+			din.close();
+		}
+	}
 
 	/**
 	 *  Took inspiration from "Algorithms, 4th Edition" by Robert Sedgewick and Kevin Wayne
 	 */
 
-	// need to have the static key word so it can be instantiated in the main
 	static class Edge implements Comparable<Edge>{
 
 		// connected edges
@@ -255,5 +365,4 @@ public class kruskalMST {
 			}
 		}
 	}
-
 }
