@@ -1,5 +1,3 @@
-import com.sun.source.tree.Tree;
-
 import java.io.DataInputStream;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -51,17 +49,19 @@ public class improvedKruskalMST {
 		TreeSet<Edge> edgesInMST = new TreeSet<>();
 		edgesInMST.addAll(this.mst);
 
+		long accWeight = 0;
 		int i = 0;
 		for (Edge e : edgesInMST) {
 			i++;
-			System.out.printf("%2d%1s%6s%2d%6s%2d%11s%6d%n", i,":","v =", e.either(),"w =", e.other(e.either()),"Weight =", e.weight);
+			accWeight = accWeight + e.weight;
+			System.err.printf("%2d%1s%6s%3d%6s%3d%11s%7d%23s%8d%n", i, ":", "v=", e.either(), "w=", e.other(e.either()), "Weight=", e.weight, "Accumulated Weight=",accWeight);
 		}
-		System.out.println("Weight of the MST = " + getWeight());
+		System.err.println("Weight of the MST = " + accWeight);
 	}
 
 	public long getWeight() {return weight;}
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) {
 
 		try {
 			Reader s = new Reader();
@@ -85,14 +85,13 @@ public class improvedKruskalMST {
 
 				edges.add(e);
 
-//				graph.addEdge(e);
 			}
 
 			improvedKruskalMST mst = new improvedKruskalMST(n, edges);
 
-			System.out.println(mst.getWeight());
-
 			mst.printMST();
+
+			System.out.println(mst.getWeight());
 
 		} catch (IOException e) {
 			// reader
