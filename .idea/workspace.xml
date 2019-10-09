@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4aa0266a-38f8-4808-a1f8-bd571014b329" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/primMST.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/improvedKruskalMST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/improvedKruskalMST.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/primMST.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,7 +31,11 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1RMsPrUBxCMl14CpVJDT5Lho7c9" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
@@ -134,7 +137,8 @@
       <workItem from="1570090058291" duration="10440000" />
       <workItem from="1570123246015" duration="2672000" />
       <workItem from="1570125934822" duration="4965000" />
-      <workItem from="1570357496369" duration="13296000" />
+      <workItem from="1570357496369" duration="13896000" />
+      <workItem from="1570621418438" duration="49000" />
     </task>
     <servers />
   </component>
@@ -167,6 +171,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
