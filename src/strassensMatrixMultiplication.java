@@ -107,23 +107,20 @@ public class strassensMatrixMultiplication {
 		int rowEnd = 0;
 
 		if (pos < 3) {
-			rowStart = 0;
 			rowEnd = a.length/2;
 		} else {
 			rowStart = a.length/2;
 			rowEnd = a.length; }
 
 		if (pos % 2 != 0) {
-			colStart = 0;
 			colEnd = a.length/2;
 		} else {
 			colStart = a.length/2;
 			colEnd = a.length; }
 
 		for (int i = rowStart; i < rowEnd; i++) {
-			for (int j = colStart; j < colEnd; j++) {
-				res[i-rowStart][j-colStart] = a[i][j];
-			}
+			if (colEnd - colStart >= 0)
+				System.arraycopy(a[i], colStart, res[i - rowStart], 0, colEnd - colStart);
 		}
 
 		return res;
@@ -135,30 +132,22 @@ public class strassensMatrixMultiplication {
 
 		// position 1
 		for (int i = 0; i < pos1.length; i++){
-			for (int j = 0 ; j < pos1.length; j++){
-				res[i][j] = pos1[i][j];
-			}
+			System.arraycopy(pos1[i], 0, res[i], 0, pos1.length);
 		}
 
 		// position 2
 		for (int i = 0; i < pos2.length; i++){
-			for (int j = 0 ; j < pos2.length; j++){
-				res[i][j+pos2.length] = pos2[i][j];
-			}
+			System.arraycopy(pos2[i], 0, res[i], pos2.length, pos2.length);
 		}
 
 		// position 3
 		for (int i = 0; i < pos3.length; i++){
-			for (int j = 0 ; j < pos3.length; j++){
-				res[i+pos3.length][j] = pos3[i][j];
-			}
+			System.arraycopy(pos3[i], 0, res[i + pos3.length], 0, pos3.length);
 		}
 
 		// position 4
 		for (int i = 0; i < pos4.length; i++){
-			for (int j = 0 ; j < pos4.length; j++){
-				res[i+pos4.length][j+pos4.length] = pos4[i][j];
-			}
+			System.arraycopy(pos4[i], 0, res[i + pos4.length], pos4.length, pos4.length);
 		}
 
 		return res;
@@ -166,9 +155,7 @@ public class strassensMatrixMultiplication {
 
 	private static int[] getRow(int r, int[][] m) {
 		int[] res = new int[m.length];
-		for (int i = 0; i < m.length; i++){
-			res[i] = m[r][i];
-		}
+		System.arraycopy(m[r], 0, res, 0, m.length);
 		return res;
 	}
 
@@ -189,11 +176,11 @@ public class strassensMatrixMultiplication {
 	}
 
 	private static void printMatrix(int[][] c) {
-		for (int i = 0; i < c.length; i++){
-			for (int j = 0; j < c.length-1; j++) {
-				System.out.print(c[i][j] + " ");
+		for (int[] ints : c) {
+			for (int j = 0; j < c.length - 1; j++) {
+				System.out.print(ints[j] + " ");
 			}
-			System.out.print(c[i][c.length-1] + "\n");
+			System.out.print(ints[c.length - 1] + "\n");
 			// c[row][column]
 		}
 
